@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>VerifyAPIAccessTokenScope</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="get-store-wise-status">
+            <Description>get-store-wise-status</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/store-department-summary/get-store-wise-status") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-load-details">
+            <Description>get-load-details</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/store-department-details/get-load-details") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-article-details">
+            <Description>get-article-details</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/store-department-details/get-article-details") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-od-lou-by-load-oln">
+            <Description>get-od-lou-by-load-oln</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/get-od-lou-by-load-oln") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-lod-load-by-shipmentId">
+            <Description>get-lod-load-by-shipmentId</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/get-lod-load-by-shipmentId") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-gps-snapshot">
+            <Description>get-gps-snapshot</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/get-gps-snapshot") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-Rx-narcotics-routes-summary-by-store">
+            <Description>get-Rx-narcotics-routes-summary-by-store</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/store-department-summary/get-Rx-narcotics-routes-summary-by-store") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-Rx-narcotics-tote-details">
+            <Description>get-Rx-narcotics-tote-details</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/store-department-details/get-Rx-narcotics-tote-details") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-RX-narcotics-article">
+            <Description>get-RX-narcotics-article</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/store-department-details/get-RX-narcotics-article") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-order-details-by-tote">
+            <Description>get-order-details-by-tote</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/get-order-details-by-tote") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-bill-of-lading">
+            <Description>get-bill-of-lading</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/get-bill-of-lading") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="networkSchedule">
+            <Description>networkSchedule</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/networkSchedule") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="exception-route-search">
+            <Description>exception-route-search</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/exception-route-search") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="get-load-planogram">
+            <Description>get-load-planogram</Description>
+            <Request>
+                <Step>
+                    <Name>EV-PathFromUrlForTmLoad</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/scv/get-load-planogram") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-load-tobacco-manifest">
+            <Description>get-load-tobacco-manifest</Description>
+            <Request>
+                <Step>
+                    <Name>EV-PathFromUrlForTmLoad</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/scv/get-load-tobacco-manifest") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="scv-get-load-details">
+            <Description>scv-get-load-details</Description>
+            <Request>
+                <Step>
+                    <Name>EV-PathFromUrlForTmLoad</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/scv/get-load-details") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-delivery-document">
+            <Description>get-delivery-document</Description>
+            <Request>
+                <Step>
+                    <Name>EV-PathFromUrlForTmLoad</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/scv/get-delivery-document") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="get-oln-details-without-planogram">
+            <Description>get-oln-details-without-planogram</Description>
+            <Request>
+                <Step>
+                    <Name>EV-PathFromUrlForTmLoad</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/scv/get-oln-details-without-planogram") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="loadMessageByInterface">
+            <Description>loadMessageByInterface</Description>
+            <Request>
+                <Step>
+                    <Name>EV-PathFromUrlForScsInbound</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/scs/interfaces/loadMessageByInterface") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="getTrackingSystemByCarrierService">
+            <Description>getTrackingSystemByCarrierService</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/getTrackingSystemByCarrierService") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="Undefined">
+            <Description/>
+            <Response/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/**")</Condition>
+            <Request>
+                <Step>
+                    <Name>AM-SetTimeFormat</Name>
+                </Step>
+                <Step>
+                    <Name>RF-UnknownRequest</Name>
+                </Step>
+            </Request>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <PostClientFlow>
+        <Request/>
+        <Response>
+            <Step>
+                <Name>FC-CallMessageLogging</Name>
+            </Step>
+        </Response>
+    </PostClientFlow>
+    <HTTPProxyConnection>
+        <BasePath>/oss</BasePath>
+        <VirtualHost>secure</VirtualHost>
+        <VirtualHost>public.secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="scvapiTarget">
+        <TargetEndpoint>scvapiTarget</TargetEndpoint>
+        <Condition>(((proxy.pathsuffix MatchesPath "/store-department-summary/get-store-wise-status") or (proxy.pathsuffix MatchesPath "/store-department-details/get-load-details") or (proxy.pathsuffix MatchesPath "/store-department-details/get-article-details") or (proxy.pathsuffix MatchesPath "/get-od-lou-by-load-oln") or (proxy.pathsuffix MatchesPath "/get-lod-load-by-shipmentId") or (proxy.pathsuffix MatchesPath "/get-gps-snapshot")) and (request.verb = "GET")) 
+        or 
+           ((proxy.pathsuffix MatchesPath "/networkSchedule" or proxy.pathsuffix MatchesPath "/exception-route-search") and (request.verb = "POST"))</Condition>
+    </RouteRule>
+    <RouteRule name="NarcoticsTarget">
+        <TargetEndpoint>NarcoticsTarget</TargetEndpoint>
+        <Condition>((proxy.pathsuffix MatchesPath "/store-department-summary/get-Rx-narcotics-routes-summary-by-store") or (proxy.pathsuffix MatchesPath "/store-department-details/get-Rx-narcotics-tote-details") or (proxy.pathsuffix MatchesPath "/store-department-details/get-RX-narcotics-article") or (proxy.pathsuffix MatchesPath "/get-order-details-by-tote") or (proxy.pathsuffix MatchesPath "/get-bill-of-lading") or (proxy.pathsuffix MatchesPath "/getTrackingSystemByCarrierService"))</Condition>
+    </RouteRule>
+    <RouteRule name="tmload">
+        <TargetEndpoint>tmload</TargetEndpoint>
+        <Condition>((proxy.pathsuffix MatchesPath "/scv/get-load-planogram") or (proxy.pathsuffix MatchesPath "/scv/get-load-tobacco-manifest") or (proxy.pathsuffix MatchesPath "/scv/get-load-details") or (proxy.pathsuffix MatchesPath "/scv/get-delivery-document") or (proxy.pathsuffix MatchesPath "/scv/get-oln-details-without-planogram")) and (request.verb = "GET")</Condition>
+    </RouteRule>
+    <RouteRule name="scsInboundTarget">
+        <TargetEndpoint>scsInboundTarget</TargetEndpoint>
+        <Condition>((proxy.pathsuffix MatchesPath "/scs/interfaces/loadMessageByInterface")) and (request.verb = "POST")</Condition>
+    </RouteRule>
+</ProxyEndpoint>
