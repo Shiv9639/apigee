@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-UnknownRequest">
+    <DisplayName>RF-UnknownRequest</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <AssignVariable>
+            <Name>skip-error</Name>
+            <Value>true</Value>
+        </AssignVariable>
+        <Set>
+            <Payload contentType="application/json; charset=utf-8">
+                    {
+                        "LCL": {
+                            "Status": {
+                                "code": "404",
+                                "message": "Not Found",
+                                "api": "{sf-preflow-mandatory-apiname}",
+                                "id": "{messageid}",
+                                "time": "{other-response-timestamp}"
+                            }
+                        }
+                    }
+           </Payload>
+            <StatusCode>404</StatusCode>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>
