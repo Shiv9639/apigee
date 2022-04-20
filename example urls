@@ -1,0 +1,26 @@
+Backend Service BASE URL : scs-svc-waving-api-scs-st.apps.ltosp4lwr.osp.ngco.com
+
+
+UAT	https://api-sit1.loblaw.ca/aaw/v1/scv/autowaving/user-task-action-query/doc/awTaskDetails	https://s.tst.lt.api.loblaw.ca/aaw/v1/scv/autowaving/user-task-action-query/doc/awTaskDetails	https://d.uat1.lt.api.loblaw.ca/scv/autowaving/user-task-action-query/doc/awTaskDetails	
+https://scs-svc-waving-api-scs-ut.apps.ltosp4lwr.osp.ngco.com/scv/autowaving/user-task-action-query/doc/awTaskDetails
+
+verb: GET
+
+PT	https://api-pt.loblaw.ca/aaw/v1/scv/autowaving/user-task-action-query/doc/awTaskDetails	https://s.pte.lt.api.loblaw.ca/aaw/v1/scv/autowaving/user-task-action-query/doc/awTaskDetails	https://d.pte02.lt.api.loblaw.ca/scv/autowaving/user-task-action-query/doc/awTaskDetails	
+https://scs-svc-waving-api-scs-pt.apps.ltosp4lwr.osp.ngco.com/scv/autowaving/user-task-action-query/doc/awTaskDetails
+
+verb: GET
+
+
+
+PR	https://api.loblaw.ca/aaw/v1/scv/autowaving/user-task-action-query/doc/awTaskDetails	https://s.lt.api.loblaw.ca/aaw/v1/scv/autowaving/user-task-action-query/doc/awTaskDetails	
+https://d.lt03.api.loblaw.ca/scv/autowaving/user-task-action-query/doc/awTaskDetails
+
+https://scs-svc-waving-api-scs-pr.apps.ltosp4upr.osp.ngco.com/scv/autowaving/user-task-action-query/doc/awTaskDetails
+
+verb: GET
+
+DR	https://api.loblaw.ca/aaw/v1/scv/autowaving/user-task-action-query/doc/awTaskDetails	https://s.lt.api.loblaw.ca/aaw/v1/scv/autowaving/user-task-action-query/doc/awTaskDetails	https://d.lt03.api.loblaw.ca/dr/scv/autowaving/user-task-action-query/doc/awTaskDetails	
+https://scs-svc-waving-api-scs-dr.apps.ltosp4dr.osp.ngco.com/scv/autowaving/user-task-action-query/doc/awTaskDetails
+
+verb: GET
